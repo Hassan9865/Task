@@ -3,6 +3,7 @@ import 'package:stacked_services/stacked_services.dart';
 import 'package:task/view/Bottom%20NavBar/bottomNav_bar.dart';
 import 'package:task/view/Profile%20view/profile_view.dart';
 import 'package:task/view/chat%20view/chat_view.dart';
+import 'package:task/view/chatting%20view/chatting_view.dart';
 import 'package:task/view/create%20view/create_view.dart';
 import 'package:task/view/home%20view/home_view.dart';
 import 'package:task/view/search%20view/search_view.dart';
@@ -14,6 +15,7 @@ import 'package:task/view/search%20view/search_view.dart';
   MaterialRoute(page: ChatView),
   MaterialRoute(page: ProfileView),
   MaterialRoute(page: SearchView),
+  MaterialRoute(page: ChattingView),
 ], dependencies: [
   Singleton(classType: NavigationService),
 ])
