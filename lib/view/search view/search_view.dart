@@ -10,7 +10,14 @@ class SearchView extends StatelessWidget {
     return ViewModelBuilder.reactive(
         viewModelBuilder: () => SearchViewmodel(),
         builder: (context, SearchViewmodel viewModel, child) {
-          return Scaffold();
+          return Scaffold(
+            body: Center(
+              child: Text(
+                "This is Search Page",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+              ),
+            ),
+          );
         });
   }
 }

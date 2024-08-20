@@ -10,7 +10,14 @@ class ProfileView extends StatelessWidget {
     return ViewModelBuilder.reactive(
         viewModelBuilder: () => ProfileViewmodel(),
         builder: (context, ProfileViewmodel viewModel, child) {
-          return Scaffold();
+          return Scaffold(
+            body: Center(
+              child: Text(
+                "This is Profile Page",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+              ),
+            ),
+          );
         });
   }
 }
