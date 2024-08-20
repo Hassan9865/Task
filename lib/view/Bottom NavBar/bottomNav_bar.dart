@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'package:stacked/stacked.dart';
 import 'package:task/view/Bottom%20NavBar/bottomNavBar_viewModal.dart';
@@ -46,8 +47,8 @@ class Bottombar extends StatelessWidget {
             //   index: myindex,
             // ),
             bottomNavigationBar: BottomNavigationBar(
-                backgroundColor: const Color(0xFF084A76),
-                unselectedItemColor: Colors.white,
+                backgroundColor: Colors.white,
+                unselectedItemColor: Colors.black,
                 selectedItemColor: Colors.grey[500],
                 type: BottomNavigationBarType.fixed,
                 onTap: ViewModel.setIndex, // (index) {
@@ -56,29 +57,44 @@ class Bottombar extends StatelessWidget {
                 //   // });
                 // },
                 currentIndex: ViewModel.currentIndex, //myindex,
-                items: const [
+                items: [
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.home),
-                      label: "Home",
-                      backgroundColor: Colors.amber),
+                    icon: Icon(
+                      Icons.home_outlined,
+                      size: MediaQuery.of(context).size.width *
+                          0.08, // Adjust the size relative to screen width
+                    ),
+                    label: "Home",
+                    backgroundColor: Colors.amber,
+                  ),
                   BottomNavigationBarItem(
                       icon: Icon(
-                        Icons.search,
+                        Icons.search_outlined,
+                        size: MediaQuery.of(context).size.width * 0.08,
                       ),
                       label: "search",
                       backgroundColor: Colors.amber),
                   BottomNavigationBarItem(
                     backgroundColor: Colors.yellow,
-                    icon: Icon(Icons.create),
+                    icon: Icon(
+                      Icons.add_outlined,
+                      size: MediaQuery.of(context).size.width * 0.08,
+                    ),
                     label: "Create",
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(Icons.chat),
+                    icon: Icon(
+                      Icons.chat_outlined,
+                      size: MediaQuery.of(context).size.width * 0.08,
+                    ),
                     label: "Chat",
                     backgroundColor: Colors.yellow,
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(Icons.person),
+                    icon: Icon(
+                      Icons.person_outline,
+                      size: MediaQuery.of(context).size.width * 0.08,
+                    ),
                     label: "Profile",
                     backgroundColor: Colors.yellow,
                   ),
