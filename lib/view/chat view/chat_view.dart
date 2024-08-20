@@ -10,7 +10,54 @@ class ChatView extends StatelessWidget {
     return ViewModelBuilder.reactive(
         viewModelBuilder: () => ChatViewmodel(),
         builder: (context, ChatViewmodel viewModel, child) {
-          return Scaffold();
+          return Scaffold(
+            appBar: AppBar(
+              title: Text(
+                'Messsage',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              actions: [Icon(Icons.add_circle_outline_rounded)],
+            ),
+            body: ListView.builder(itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListTile(
+                  tileColor: Color(0xffECF3F6),
+                  title: Text(
+                    'Bruno Pharm',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  leading: CircleAvatar(
+                    radius: MediaQuery.of(context).size.width / 15,
+                    backgroundColor: Colors.grey,
+                    backgroundImage: AssetImage("assets/images/Photo.png"),
+                  ),
+                  subtitle: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Hello i really like your post'),
+                      SizedBox(height: 8),
+                      Text('2 min ago',
+                          style: TextStyle(fontSize: 12, color: Colors.grey)),
+                    ],
+                  ),
+                  trailing: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text('5'),
+                          SizedBox(width: 5),
+                          Icon(Icons.message_outlined),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            }),
+          );
         });
   }
 }
