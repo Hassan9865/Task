@@ -59,8 +59,8 @@ class Bottombar extends StatelessWidget {
                 currentIndex: ViewModel.currentIndex, //myindex,
                 items: [
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.home_outlined,
+                    icon: ImageIcon(
+                      AssetImage('assets/images/home-2.png'),
                       size: MediaQuery.of(context).size.width *
                           0.08, // Adjust the size relative to screen width
                     ),
@@ -68,31 +68,31 @@ class Bottombar extends StatelessWidget {
                     backgroundColor: Colors.amber,
                   ),
                   BottomNavigationBarItem(
-                      icon: Icon(
-                        Icons.search_outlined,
+                      icon: ImageIcon(
+                        AssetImage('assets/images/search-normal.png'),
                         size: MediaQuery.of(context).size.width * 0.08,
                       ),
                       label: "search",
                       backgroundColor: Colors.amber),
                   BottomNavigationBarItem(
                     backgroundColor: Colors.yellow,
-                    icon: Icon(
-                      Icons.add_outlined,
+                    icon: ImageIcon(
+                      AssetImage('assets/images/add-square.png'),
                       size: MediaQuery.of(context).size.width * 0.08,
                     ),
                     label: "Create",
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.chat_outlined,
+                    icon: ImageIcon(
+                      AssetImage('assets/images/messages-2.png'),
                       size: MediaQuery.of(context).size.width * 0.08,
                     ),
                     label: "Chat",
                     backgroundColor: Colors.yellow,
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.person_outline,
+                    icon: ImageIcon(
+                      AssetImage('assets/images/profile.png'),
                       size: MediaQuery.of(context).size.width * 0.08,
                     ),
                     label: "Profile",

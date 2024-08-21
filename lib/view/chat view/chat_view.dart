@@ -51,9 +51,12 @@ class ChatView extends StatelessWidget {
                         Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            Text('5'),
+                            Text(
+                              '5',
+                              style: TextStyle(fontSize: 15),
+                            ),
                             SizedBox(width: 5),
-                            Icon(Icons.message_outlined),
+                            ImageIcon(AssetImage('assets/images/mesg.png'))
                           ],
                         ),
                       ],

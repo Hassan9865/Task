@@ -87,15 +87,9 @@ class MyContainerPost extends StatelessWidget {
                   size: MediaQuery.of(context).size.width / 16,
                 ),
                 SizedBox(width: 20),
-                Icon(
-                  Icons.comment_outlined,
-                  size: MediaQuery.of(context).size.width / 16,
-                ),
+                Image.asset('assets/images/message-circle 1.png'),
                 SizedBox(width: 20),
-                Icon(
-                  Icons.share_outlined,
-                  size: MediaQuery.of(context).size.width / 16,
-                )
+                Image.asset('assets/images/send 1.png')
               ],
             )
           ],
