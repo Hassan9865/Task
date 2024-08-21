@@ -61,8 +61,7 @@ class Bottombar extends StatelessWidget {
                   BottomNavigationBarItem(
                     icon: ImageIcon(
                       AssetImage('assets/images/home-2.png'),
-                      size: MediaQuery.of(context).size.width *
-                          0.08, // Adjust the size relative to screen width
+                      size: MediaQuery.of(context).size.width * 0.08,
                     ),
                     label: "Home",
                     backgroundColor: Colors.amber,

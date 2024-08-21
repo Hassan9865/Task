@@ -18,9 +18,8 @@ class CreateView extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor:
-                        Color(0xff5DC482), // Background color of the button
-                    // textStyle: Colors.white, // Text color
+                    backgroundColor: Color(0xff5DC482),
+                    // textStyle: Colors.white,
                     shape: RoundedRectangleBorder(
                       // Make the button square
                       borderRadius: BorderRadius.circular(5),

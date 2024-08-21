@@ -15,8 +15,8 @@ class CreateViewmodel extends BaseViewModel {
       if (pickedImage == null) return;
 
       final File imageTemp = File(pickedImage.path);
-      image = imageTemp; // Set the selected image
-      notifyListeners(); // Notify listeners to update the UI
+      image = imageTemp;
+      notifyListeners();
     } on PlatformException catch (e) {
       print('Failed to pick image: $e');
     }
@@ -29,8 +29,8 @@ class CreateViewmodel extends BaseViewModel {
       if (capturedImage == null) return;
 
       final File imageTemp = File(capturedImage.path);
-      image = imageTemp; // Set the captured image
-      notifyListeners(); // Notify listeners to update the UI
+      image = imageTemp;
+      notifyListeners();
     } on PlatformException catch (e) {
       print('Failed to capture image: $e');
     }

@@ -16,7 +16,12 @@ class ChatView extends StatelessWidget {
                 'Message',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              actions: [Icon(Icons.add_circle_outline_rounded)],
+              actions: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(Icons.add_circle_outline_rounded),
+                )
+              ],
             ),
             body: ListView.builder(itemBuilder: (context, index) {
               return InkWell(
