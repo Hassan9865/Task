@@ -194,8 +194,7 @@ void modalBottomSheetMenu(BuildContext context) {
                     style: TextStyle(color: Colors.white),
                   ),
                   leading: Image.asset('assets/images/Vectorr.png'),
-                  tileColor:
-                      Color(0xff5DC482), // Highlight first item with blue color
+                  tileColor: Color(0xff5DC482),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),

@@ -88,8 +88,13 @@ class CreateView extends StatelessWidget {
                 ),
                 Spacer(),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  // mainAxisAlignment: MainAxisAlignment.start
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Text("Topic"),
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -133,13 +138,17 @@ class CreateView extends StatelessWidget {
                     Row(
                       children: [
                         IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              viewModel.captureImageWithCamera();
+                            },
                             icon: Icon(
                               Icons.camera_enhance_rounded,
                               size: MediaQuery.of(context).size.width / 13,
                             )),
                         IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              viewModel.pickImageFromGallery();
+                            },
                             icon: Icon(
                               Icons.photo,
                               size: MediaQuery.of(context).size.width / 13,

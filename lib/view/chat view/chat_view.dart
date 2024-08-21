@@ -13,7 +13,7 @@ class ChatView extends StatelessWidget {
           return Scaffold(
             appBar: AppBar(
               title: Text(
-                'Messsage',
+                'Message',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               actions: [Icon(Icons.add_circle_outline_rounded)],
